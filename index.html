@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <div
+      class="main absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+    >
+      <h1 class="mb-4 text-2xl">🎯 Guess the Number (1-100)</h1>
+      <input
+        type="number"
+        placeholder="Enter a number "
+        id="guessnumber" 
+        class="max-w-md px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <button
+         onclick="checkGuess()"  class="guessBtn relative px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 after:content-none cursor-pointer"
+      >
+        Guess
+      </button>
+      <h2 id="message" class="m-2.5" ></h2>
+      <button id="againBtn"
+        class="againBtn relative px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-200 after:content-none cursor-pointer"
+        style="display: none"  onclick="checkGuess() "  
+      >
+        🔁 Play Again
+      </button>
+    </div>
+    <script src="script.js"></script>
+      
+  </body>
+</html>
